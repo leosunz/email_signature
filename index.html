@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hants-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-Mail Signature</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div id="present" class="present">
+      <div
+        id="container"
+        style="
+          font-size: .875rem;
+          color: #333;
+          line-height: 1.6;
+          font-family: Heebo, PingFang, 'Microsoft JhengHei';
+        "
+      >
+        <div style="flex-direction: column; display:inline-flex; max-width: 600px;">
+          <div>
+            <div style="display: flex; align-items: flex-end; justify-content: flex-end;">
+              <a href="https://uchange.to" taget="_blank">
+                <img id="logo-image" width="480px;" src="https://drive.google.com/file/d/1V_2MxQTCwvvUTIkzyRnM-LrmXtAawvBB/view">
+              </a>
+            </div>
+          </div>
+          <div style="margin-top: -80px;">
+            <div>
+              <div>
+                <span id="primary-name" style="font-weight: 700; font-size: 1.3rem;"></span>
+                <div id="job-position" style="color: #33aa22; font-size: 1.2rem;"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style="padding-left: 0px; display:flex; flex-direction:row;">
+              <div style="
+                  padding-left: 0em;
+                  display: flex;
+                  align-items: flex-end;
+                ">
+                <div style="font-size: .75em; margin-bottom: 15px; line-height: 50px;">
+                  <div style="font-size: 0.9rem;">
+                    <span style="color: #33aa22;">E-mail: </span>
+                    <strong><a id="email-address" style="color: #111111; font-size: 1.0rem;" href="mailto: "></a></strong>
+                  </div>
+                  <div style="font-size: 0.9rem;">
+                    <span style="color: #33aa22;">Address: </span>
+                    <strong><span id="address" style="color: #111111; font-size: 1.0rem;"></span></strong>
+                  </div>
+                  <div id="mobile-number" hidden>+</div>
+                </div>
+              </div>
+              <div style="margin-left: auto;">
+                <img id="image" src="icon.png" width="180px" />
+              </div>
+            </div>
+          </div>
+          <div style="clear: both;">
+            <div
+              style="
+                padding-top: 1rem;
+                font-weight: 300;
+                color: #5c5c5c;
+                font-size: 1rem;
+              "
+            >
+              <div>
+                <strong>Notice of Confidentiality:</strong>
+                <span id="content-text-first">The Information contained in this email and any subsequent correspondence from WGM Services Ltd is private and is intended solely for the intended recipient(s). For those other than the recipient, any disclosure, copying, distribution, or any action taken or omitted to be taken in reliance on such information is prohibited and may be unlawful. If you have received this transmission in error please contact the sender.</span>
+              </div>
+              <div>
+                <strong>Risk Disclaimer: </strong>
+                <span id="content-text-second">Trading in Forex. CFDs and Cryptocurrencies involves significant risk and may not be suitable for all investors. EZInvest.com is a trading name of WGM Services Ltd, a Financial Services Company authorised and regulated by the Cyprus Securities Exchange Commission (CySEC) under license no. 203/13.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="aside">
+      <div class="header-group">
+        <h1 class="header">E-mail Signature</h1>
+        <span style="padding: 3px; cursor: pointer;">
+          -
+        </span>
+        <time class="version" datatime="2022-10-27T17:00:00.000Z"></time>
+      </div>
+      <div id="form" class="form">
+        <div class="input-group">
+          <input id="input-primary-name" class="input" type="text" name="primary-name" value="Leonidas Savvides" />
+          <label for="input-primary-name" class="field">Primary name</label>
+        </div>
+        <div class="input-group">
+          <input id="input-job-position" class="input" type="text" name="job-position" value="Lead Designer" />
+          <label for="input-job-position" class="field">Title</label>
+        </div>
+        <div class="input-group">
+          <input id="input-email-address" class="input" type="email" name="email-address" value="leo.s@wgmservices" />
+          <label for="input-email-address" class="field">Mail Address</label>
+        </div>
+        <div class="input-group">
+          <input id="input-address" class="input" type="text" name="address" value="Vyzantiou 11, Strovolos 2064, Nicosia, Cyprus" />
+          <label for="input-address" class="field">Address</label>
+        </div>
+        <div class="input-group">
+          <input id="input-mobile-number" class="input" type="tel" name="mobile-number" value="380930630564" />
+          <label for="input-mobile-number" class="field">Mobile number</label>
+        </div>
+        <div class="input-group">
+          <input id="input-logo-size" class="input" type="number" name="logo-size" value="480" />
+          <label for="input-logo-size" class="field">Logo Size</label>
+        </div>
+        <div class="input-group">
+          <input id="input-image-size" class="input" type="number" name="image-size" value="180" />
+          <label for="input-image-size" class="field">Image Size</label>
+        </div>
+        <div class="input-group">
+          <div style="display: inline-flex; flex-direction: row;">
+            <span>EU / Global</span>
+            <label class="switch">
+              <input id="input-version-type" type="checkbox" name="version-name">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="tools">
+        <div id="status" class="status">Copied</div>
+        <button id="copy-text-button" class="button button-primary" type="button">Copy as Styled Text</button>
+        <button id="copy-html-button" class="button button-secondary" type="button">Copy as HTML</button>
+      </div>
+    </div>
+  </div>
+  <script src="./generator.js"></script>
+</body>
+
+</html>
