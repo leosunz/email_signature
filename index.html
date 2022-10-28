@@ -6,62 +6,68 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>E-Mail Signature</title>
   <link rel="stylesheet" href="./styles.css" />
+  <style type="text/css">
+  </style>
 </head>
 
 <body>
   <div class="wrap">
     <div id="present" class="present">
-      <div
-        id="container"
-        style="
-          font-size: .875rem;
-          color: #333;
-          line-height: 1.6;
-          font-family: Heebo, PingFang, 'Microsoft JhengHei';
-        "
-      >
-        <div style="flex-direction: column; display:inline-flex; max-width: 500px;">
-          <div>
-            <div style="display: flex; align-items: flex-end; justify-content: flex-end;">
-              <a href="https://uchange.to" taget="_blank">
-                <img id="logo-image" width="300px;" src="https://github.com/leosunz/email_signature/blob/main/logo.png?raw=true">
-              </a>
-            </div>
-          </div>
-          <div style="margin-top: -80px;">
-            <div>
+      <div id="container" style="width: 100%; display: flex; align-items: flex-end; justify-content: center;">
+        <table cellpadding="0" cellspacing="0" 
+          style="
+            font-size: .875rem;
+            color: #333;
+            line-height: 1.6;
+            font-family: Heebo, PingFang, 'Microsoft JhengHei';
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 35.25rem !important;
+          "
+        >
+          <tr>
+            <td colspan="2">
               <div>
                 <span id="primary-name" style="font-weight: 700; font-size: 1.3rem;"></span>
                 <div id="job-position" style="color: #33aa22; font-size: 1.2rem;"></div>
               </div>
-            </div>
-          </div>
-          <div>
-            <div style="padding-left: 0px; display:flex; flex-direction:row;">
-              <div style="
+            </td>
+            <td>
+              <a href="https://uchange.to" taget="_blank">
+                <img id="logo-image" width="220px;" src="https://github.com/leosunz/email_signature/blob/main/logo.png?raw=true">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div style="position: relative; top: 60px;">
+                <div style="
                   padding-left: 0em;
                   display: flex;
-                  align-items: flex-end;
+                  align-items: center;
                 ">
-                <div style="font-size: .75em; margin-bottom: 15px; line-height: 50px;">
-                  <div style="font-size: 0.8rem;">
-                    <span style="color: #33aa22;">E-mail: </span>
-                    <strong><a id="email-address" style="color: #111111; font-size: 0.82rem;" href="mailto: "></a></strong>
+                  <div style="font-size: .75em; margin-bottom: 15px; line-height: 50px; white-space: nowrap;">
+                    <div style="font-size: 0.8rem;">
+                      <span style="color: #33aa22;">E-mail: </span>
+                      <strong><a id="email-address" style="color: #111111; font-size: 0.82rem;" href="mailto: "></a></strong>
+                    </div>
+                    <div style="font-size: 0.8rem;">
+                      <span style="color: #33aa22;">Address: </span>
+                      <strong><span id="address" style="color: #111111; font-size: 0.82rem;"></span></strong>
+                    </div>
+                    <div id="mobile-number">+</div>
                   </div>
-                  <div style="font-size: 0.8rem;">
-                    <span style="color: #33aa22;">Address: </span>
-                    <strong><span id="address" style="color: #111111; font-size: 0.82rem;"></span></strong>
-                  </div>
-                  <div id="mobile-number" hidden>+</div>
                 </div>
               </div>
-              <div style="margin-left: auto;">
+            </td>
+            <td>
+              <div style="text-align: right;">
                 <img id="image" src="https://github.com/leosunz/email_signature/blob/main/icon.png?raw=true" width="150px" />
               </div>
-            </div>
-          </div>
-          <div style="clear: both;">
-            <div
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"
               style="
                 padding-top: 1rem;
                 font-weight: 300;
@@ -77,9 +83,9 @@
                 <strong>Risk Disclaimer: </strong>
                 <span id="content-text-second">Trading in Forex. CFDs and Cryptocurrencies involves significant risk and may not be suitable for all investors. EZInvest.com is a trading name of WGM Services Ltd, a Financial Services Company authorised and regulated by the Cyprus Securities Exchange Commission (CySEC) under license no. 203/13.</span>
               </div>
-            </div>
-          </div>
-        </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
     <div class="aside">
@@ -112,7 +118,7 @@
           <label for="input-mobile-number" class="field">Mobile number</label>
         </div>
         <div class="input-group">
-          <input id="input-logo-size" class="input" type="number" name="logo-size" value="300" />
+          <input id="input-logo-size" class="input" type="number" name="logo-size" value="220" />
           <label for="input-logo-size" class="field">Logo Size</label>
         </div>
         <div class="input-group">
