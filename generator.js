@@ -4,7 +4,7 @@
     primaryName: 'primary-name',
     postion: 'job-position',
     email: 'email-address',
-    mobile: 'mobile-number',
+    // mobile: 'mobile-number',
     address: 'address',
   }
 
@@ -12,7 +12,7 @@
     [fieldNameMapping.primaryName]: (name) => String(name).trim(),
     [fieldNameMapping.postion]: (postion) => String(postion).trim(),
     [fieldNameMapping.email]: (email) => String(email).trim(),
-    [fieldNameMapping.mobile]: (number) => number && number.length > 0 ? `+${String(number).trim().match(/\d{1,3}/g).join(' ')}` : '',
+    // [fieldNameMapping.mobile]: (number) => number && number.length > 0 ? `+${String(number).trim().match(/\d{1,3}/g).join(' ')}` : '',
     [fieldNameMapping.address]: (address) => String(address).trim(),
   };
 
