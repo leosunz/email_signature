@@ -40,13 +40,27 @@
       if ($input.checked) {//Wolrd-wide
         let $textContent1 = document.querySelector("#content-text-first");
         let $textContent2 = document.querySelector("#content-text-second");
+        let $websiteInput = document.querySelector("#input-address");
+        let $website = document.querySelector("#address");
+        let $logoLink = document.querySelector("#logo-link");
         $textContent1.innerText = "The Information contained in this email and any subsequent correspondence from Sanus Financial Services Limited is private and is intended solely for the intended recipient(s). For those other than the recipient, any disclosure, copying, distribution, or any action taken or omitted to be taken in reliance on such information is prohibited and may be unlawful. If you have received this transmission in error please contact the sender.";
         $textContent2.innerText = "Trading Forex, CFDs and Cryptocurrencies involves significant risk and may not be suitable for all investors. Sanus Financial Services Limited with registration number 2020/659426/07 is authorised and regulated by the Financial Sector Conduct Authority (FSCA) with License number 51523 dated 10/6/2021.";
+        $websiteInput.value = "https://world.ezinvest.com";
+        $website.innerText = "https://world.ezinvest.com";
+        $website.setAttribute('href', 'https://world.ezinvest.com');
+        $logoLink.setAttribute('href', 'https://world.ezinvest.com');
       } else {//EU
         let $textContent1 = document.querySelector("#content-text-first");
         let $textContent2 = document.querySelector("#content-text-second");
+        let $websiteInput = document.querySelector("#input-address");
+        let $website = document.querySelector("#address");
+        let $logoLink = document.querySelector("#logo-link");
         $textContent1.innerText = "The Information contained in this email and any subsequent correspondence from WGM Services Ltd is private and is intended solely for the intended recipient(s). For those other than the recipient, any disclosure, copying, distribution, or any action taken or omitted to be taken in reliance on such information is prohibited and may be unlawful. If you have received this transmission in error please contact the sender.";
-        $textContent2.innerText = "Trading in Forex. CFDs and Cryptocurrencies involves significant risk and may not be suitable for all investors. EZInvest.com is a trading name of WGM Services Ltd, a Financial Services Company authorised and regulated by the Cyprus Securities Exchange Commission (CySEC) under license no. 203/13.";
+        $textContent2.innerText = "CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 78.01% of retail investor accounts lose money when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. EZ INVEST is a trading name of WGM Services Ltd, a Financial Services Company authorized and regulated by the Cyprus Securities Exchange Commission (CySEC) under licence no. 203/13. WGM Services Ltd is located at 11, Vyzantiou, 4th Floor, Strovolos 2064, Nicosia, Cyprus.";
+        $websiteInput.value = "https://eu.ezinvest.com";
+        $website.innerText = "https://eu.ezinvest.com";
+        $website.setAttribute('href', 'https://eu.ezinvest.com');
+        $logoLink.setAttribute('href', 'https://eu.ezinvest.com');
       }
     }
     else {
