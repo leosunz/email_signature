@@ -241,3 +241,38 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 18px;
+  height: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Twitter */
+.fa-youtube {
+  background: #55ACEE;
+  color: white;
+}
